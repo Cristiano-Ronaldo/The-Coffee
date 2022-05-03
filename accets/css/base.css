@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --main-color: #be9c89;
+    --black: #333;
+    --while: #fff;
+    --light-color: #666;
+    --border: 1px solid var(--black);
+    --box-shadow: 0 .5rem .1rem rgba(0,0,0,0.1)
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+*::selection {
+    background-color: var(--main-color);
+    color: var(--while);
+}
+
+::-webkit-scrollbar {
+    height: 0.5rem;
+    width: 1rem;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.heading img {
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.heading h3 {
+    font-size: 4rem;
+    color: var(--black);
+    font-family: 'Merienda', cursive;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: var(--main-color);
+    cursor: pointer;
+    color: var(--while);
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+}
+.btn:hover {
+    background: var(--black);
+}
